@@ -46,7 +46,7 @@ def make_bulk_prediction(*, images_df: pd.Series) -> dict:
                 readable_predictions=readable_predictions,
                 version=_version)
 
-
-if __name__ == "__main__":
-    result = make_single_prediction(image_name='1.png', image_directory='./datasets/test_data/Black-grass')
-    print(result)
+#
+# if __name__ == "__main__":
+#     result = make_single_prediction(image_name='1.png', image_directory='./datasets/test_data/Black-grass')
+#     print(result)
