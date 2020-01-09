@@ -16,3 +16,4 @@ wheel==0.32.3
 
 # fetching datasets
 kaggle==1.5.1.1
+joblib==0.14.1
