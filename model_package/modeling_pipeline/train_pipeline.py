@@ -1,8 +1,8 @@
 import joblib
-from img_modeling_pipeline import pipeline as pipe
-from img_modeling_pipeline.config import config
-from img_modeling_pipeline.processing import data_management as dm
-from img_modeling_pipeline.processing import preprocessors as pp
+from modeling_pipeline import pipeline as pipe
+from modeling_pipeline.config import config
+from modeling_pipeline.processing import data_management as dm
+from modeling_pipeline.processing import preprocessors as pp
 
 
 def run_training(save_result: bool = True):

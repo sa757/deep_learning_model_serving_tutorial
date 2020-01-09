@@ -2,8 +2,8 @@ import logging
 
 import pandas as pd
 
-from img_modeling_pipeline import __version__ as _version
-from img_modeling_pipeline.processing import data_management as dm
+from modeling_pipeline import __version__ as _version
+from modeling_pipeline.processing import data_management as dm
 
 _logger = logging.getLogger(__name__)
 KERAS_PIPELINE = dm.load_pipeline_keras()

@@ -4,7 +4,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import ReduceLROnPlateau, ModelCheckpoint
 from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 
-from img_modeling_pipeline.config import config
+from modeling_pipeline.config import config
 
 
 def img_model(

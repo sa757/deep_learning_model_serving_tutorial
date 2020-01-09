@@ -13,8 +13,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
 
-from img_modeling_pipeline import model as m
-from img_modeling_pipeline.config import config
+from modeling_pipeline import model as m
+from modeling_pipeline.config import config
 
 _logger = logging.getLogger(__name__)
 
