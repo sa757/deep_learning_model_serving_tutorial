@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from modeling_pipeline.predict import make_prediction
+from modeling_pipeline.predict import make_single_prediction
 from modeling_pipeline import __version__ as _version
 # from neural_network_model.predict import make_single_prediction
 import os
@@ -29,7 +29,7 @@ def version():
                         'api_version': api_version})
 
 
-@prediction_app.route('/v1/predict/regression', methods=['POST'])
+@prediction_app.route('/v1/predict/image', methods=['POST'])
 def predict():
     if request.method == 'POST':
         # Step 1: Extract POST data from request body as JSON
@@ -40,7 +40,7 @@ def predict():
         input_data, errors = validate_inputs(input_data=json_data)
 
         # Step 3: Model prediction
-        result = make_prediction(input_data=input_data)
+        result = make_single_prediction(input_data=input_data)
         _logger.debug(f'Outputs: {result}')
 
         # Step 4: Convert numpy ndarray to list
