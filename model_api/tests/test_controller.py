@@ -3,7 +3,7 @@ import json
 import math
 import os
 
-# from neural_network_model.config import config as ccn_config
+from modeling_pipeline.config import config as ccn_config
 from modeling_pipeline import __version__ as _version
 from modeling_pipeline.config import config as model_config
 from modeling_pipeline.processing.data_management import load_dataset
