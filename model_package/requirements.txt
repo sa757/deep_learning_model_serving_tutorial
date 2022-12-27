@@ -7,7 +7,7 @@ opencv-python==4.2.0.32
 h5py==2.10.0
 
 # packaging
-setuptools==41.0.0
+setuptools==65.5.1
 wheel==0.38.1
 
 # testing requirements
